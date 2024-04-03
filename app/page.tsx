@@ -1,5 +1,6 @@
 
 
+import Category from "@/components/category/category";
 import MainNav from "@/components/main-nav/main-nav";
 import Heading from "@/components/shared/heading/heading";
 
@@ -8,6 +9,7 @@ export default function Home() {
     <div>
       <MainNav></MainNav>
       <Heading title={"Physical Fitness"}></Heading>
+      <Category></Category>
     </div>
   );
 }
