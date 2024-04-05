@@ -31,8 +31,8 @@ const MainNav = () => {
 
   return (
     <div className="h-[100px] bg-blue">
-      <div className="md:container px-4 md:px-0 h-full mx-auto">
-        <div className="flex items-center justify-between h-full py-6 text-white">
+      <div className="md:container px-4 md:px-2 h-full mx-auto">
+        <div className="flex items-center justify-between h-full py-6 md:text-3xl text-whiteDark">
           <div className=""><Image layout="responsive" width={"150"} height={"150"} src={"https://i.ibb.co/VH3V7dH/assessment-logo-1.png"} alt="logo"></Image></div>
           {/* Hamburger menu icon for mobile */}
           <div className="md:hidden -order-1">

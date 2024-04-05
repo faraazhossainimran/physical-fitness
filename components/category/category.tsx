@@ -18,15 +18,15 @@ const Category: React.FC = () => {
       item: "Pediatric",
       url: "/pediatric",
     },
-    {
-      item: "Orthopedic",
-      url: "/orthopedic",
-    },
+    // {
+    //   item: "Orthopedic",
+    //   url: "/orthopedic",
+    // },
   ];
   return (
     <div className="container mx-auto">
       <div className="grid md:grid-cols-2">
-        <ul className="grid grid-cols-2 md:grid-cols-4">
+        <ul className="flex">
           {categoryItems.map((categoryItem, index) => (
             <li
               key={index}
