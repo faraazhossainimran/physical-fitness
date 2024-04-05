@@ -7,7 +7,7 @@ const RelatedCards = () => {
     console.log(training);
     return (
         <div className='container mx-auto'>
-           <div className='grid md:grid-cols-3 gap-4'>{training.map((trainingDetail)=> (<TrainingCard trainingDetail={trainingDetail}></TrainingCard>))}</div>
+           <div className='grid md:grid-cols-3 gap-4'>{training.map((trainingDetail, index)=> (<TrainingCard key={index} trainingDetail={trainingDetail}></TrainingCard>))}</div>
         </div>
     )
 }
