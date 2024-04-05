@@ -15,10 +15,10 @@ import { IoBagCheck } from "react-icons/io5";
 import { IoShareSocial } from "react-icons/io5";
 const AdmissionCard = () => {
   return (
-    <div className="w-[370px] container mx-auto">
+    <div className="md:w-[370px] container mx-auto">
       <Card>
         <CardHeader className="p-3">
-          <Image width={"320"} height={"320"} src={"https://i.ibb.co/hdN1c3r/Frame-1068-1.png"} alt="Admission going on"></Image>
+          <Image layout="responsive" width={"320"} height={"320"} src={"https://i.ibb.co/hdN1c3r/Frame-1068-1.png"} alt="Admission going on"></Image>
         <div className="flex justify-between">
         <CardTitle className="uppercase text-2xl">Shito-Ryu karate</CardTitle>
           <IoShareSocial size={"24px"} className="mt-1"/>

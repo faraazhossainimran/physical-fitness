@@ -4,6 +4,7 @@ import React from "react";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { IoSearch } from "react-icons/io5";
 import Image from "next/image";
+import { IoMenu } from "react-icons/io5";
 const MainNav = () => {
   const menuItems: navItems = [
     {
@@ -29,11 +30,16 @@ const MainNav = () => {
   ];
 
   return (
-    <div className="h-[80px] bg-blue">
-      <div className="container h-full mx-auto">
+    <div className="h-[100px] bg-blue">
+      <div className="md:container px-4 md:px-0 h-full mx-auto">
         <div className="flex items-center justify-between h-full py-6 text-white">
-          <div className=""><Image width={"150"} height={"150"} src={"https://i.ibb.co/VH3V7dH/assessment-logo-1.png"} alt="logo"></Image></div>
-          <div className="text-center">
+          <div className=""><Image layout="responsive" width={"150"} height={"150"} src={"https://i.ibb.co/VH3V7dH/assessment-logo-1.png"} alt="logo"></Image></div>
+          {/* Hamburger menu icon for mobile */}
+          <div className="md:hidden -order-1">
+            {/* Insert your hamburger menu icon here */}
+            <IoMenu size={32}/>
+          </div>
+          <div className="hidden md:block text-center">
             <ul className="flex">
               {menuItems.map((menuItem, index) => (
                 <li key={index} className="mr-8 hover:border-b-yellow hover:border-b-2 pb-6 -mb-6 hover:text-yellow">

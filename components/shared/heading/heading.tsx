@@ -6,7 +6,7 @@ const Heading: React.FC<HeadingProps> = ({title}) => {
     const secondWord = wordArray[1];
     console.log(firstWord);
     return (
-        <div className='uppercase pt-[60px] text-center text-[33px] font-bold'>
+        <div className='uppercase pt-8 pb-4 md:pt-[60px] text-center text-[2xl] md:text-[33px] font-bold'>
            {/* <p>first word: {firstWord}</p>
             {wordArray.map((word, index)=> (
                 <span key={index}>{word} </span>
